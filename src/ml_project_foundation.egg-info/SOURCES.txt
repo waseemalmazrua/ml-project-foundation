@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+src/app/__init__.py
+src/app/data/__init__.py
+src/app/data/preprocessing.py
+src/app/models/__init__.py
+src/app/models/classifier.py
+src/app/training/__init__.py
+src/app/training/evaluate.py
+src/app/training/train.py
+src/ml_project_foundation.egg-info/PKG-INFO
+src/ml_project_foundation.egg-info/SOURCES.txt
+src/ml_project_foundation.egg-info/dependency_links.txt
+src/ml_project_foundation.egg-info/requires.txt
+src/ml_project_foundation.egg-info/top_level.txt
