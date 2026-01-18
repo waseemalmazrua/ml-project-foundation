@@ -38,16 +38,19 @@ ml-project-foundation/
 ├── Dockerfile
 ├── pyproject.toml
 └── README.md
+
+
 Testing philosophy
+
 This project uses pytest as a first line of defense.
 
 At the current stage, the test suite contains a simple smoke test:
-
-python
-Copy code
 def test_app_imports():
     import app
+
+
 Why this test exists
+
 Ensures the project imports correctly
 
 Catches missing dependencies early
@@ -61,9 +64,11 @@ This is a deliberate starting point, not the final test strategy.
 More tests (API, inference, model behavior) will be added only when the logic becomes stable.
 
 Continuous Integration (CI)
+
 GitHub Actions is used to automatically run tests on every push and pull request.
 
 CI process
+
 A clean Ubuntu environment is created
 
 Python is installed
@@ -82,18 +87,20 @@ The project remains reproducible
 
 Future refactors are safer
 
+
 Docker
+
 A Dockerfile is included to allow containerized execution of the application.
 
 Docker is intentionally not used as a validation tool.
 Instead, the correct flow is:
 
-nginx
-Copy code
 Tests → CI → Docker build → Deployment
-Docker images should only be built after tests pass.
+
+
 
 Learning mindset
+
 This repository reflects an incremental learning approach:
 
 Start simple
@@ -107,6 +114,7 @@ Build confidence before scaling
 The project will evolve step by step as understanding deepens.
 
 Future improvements (planned)
+
 API endpoint tests
 
 Inference behavior tests
@@ -120,6 +128,7 @@ Linting and formatting
 Deployment pipeline
 
 Disclaimer
+
 This project is intentionally minimal.
 
 The focus is on correct foundations, not feature completeness.
