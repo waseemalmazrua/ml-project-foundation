@@ -23,7 +23,7 @@ This project focuses on **engineering fundamentals** that are commonly used in r
 
 ## Project Structure
 
-```text
+
 ml-project-foundation/
 ├── src/
 │   └── app/
@@ -38,9 +38,9 @@ ml-project-foundation/
 ├── Dockerfile
 ├── pyproject.toml
 └── README.md
+-------------------------
 
-
-Testing philosophy
+*Testing philosophy*
 
 This project uses pytest as a first line of defense.
 
@@ -132,3 +132,4 @@ Disclaimer
 This project is intentionally minimal.
 
 The focus is on correct foundations, not feature completeness.
+
