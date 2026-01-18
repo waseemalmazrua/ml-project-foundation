@@ -38,4 +38,5 @@ jobs:
       # 6. تشغيل الاختبارات
       - name: Run tests
         run: |
-          pytest -q
+         uv run pytest -q
+          
