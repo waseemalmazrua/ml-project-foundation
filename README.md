@@ -23,7 +23,7 @@ This project focuses on **engineering fundamentals** that are commonly used in r
 
 ## Project Structure
 
-
+```text
 ml-project-foundation/
 ├── src/
 │   └── app/
@@ -38,9 +38,10 @@ ml-project-foundation/
 ├── Dockerfile
 ├── pyproject.toml
 └── README.md
+```
 -------------------------
 
-*Testing philosophy*
+**Testing philosophy**
 
 This project uses pytest as a first line of defense.
 
@@ -63,7 +64,7 @@ This is a deliberate starting point, not the final test strategy.
 
 More tests (API, inference, model behavior) will be added only when the logic becomes stable.
 
-Continuous Integration (CI)
+**Continuous Integration (CI)**
 
 GitHub Actions is used to automatically run tests on every push and pull request.
 
@@ -88,7 +89,7 @@ The project remains reproducible
 Future refactors are safer
 
 
-Docker
+**Docker**
 
 A Dockerfile is included to allow containerized execution of the application.
 
@@ -99,7 +100,7 @@ Tests → CI → Docker build → Deployment
 
 
 
-Learning mindset
+**Learning mindset**
 
 This repository reflects an incremental learning approach:
 
@@ -126,8 +127,9 @@ Docker build step inside CI
 Linting and formatting
 
 Deployment pipeline
+-------------------
 
-Disclaimer
+Disclaimer:
 
 This project is intentionally minimal.
 
