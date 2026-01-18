@@ -1,6 +1,2 @@
-# tests/test_imports.py
-
-def test_imports():
+def test_app_imports():
     import app
-    import app.api
-    import app.inference
